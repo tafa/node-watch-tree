@@ -86,7 +86,7 @@ exports.StatWatcher = class StatWatcher extends events.EventEmitter
       if err
         
         # file deleted
-        if err and err.errno == ENOENT
+        if err.errno == ENOENT
           if last_mtime
             @emit 'fileDeleted', path
             delete @path_mtime[path]

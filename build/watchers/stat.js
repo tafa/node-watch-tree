@@ -90,7 +90,7 @@
         this.numStatsPending--;
         last_mtime = this.path_mtime[path] || null;
         if (err) {
-          if (err && err.errno === ENOENT) {
+          if (err.errno === ENOENT) {
             if (last_mtime) {
               this.emit('fileDeleted', path);
               delete this.path_mtime[path];
