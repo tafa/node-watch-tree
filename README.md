@@ -89,7 +89,7 @@ git clone https://github.com/tafa/node-watch-tree.git; cd node-watch-tree
 npm link
 
 # Develop
-coffee -cwlo nbuild src
+coffee -cwlo build src
 
 # Push
 cake build &amp;&amp; cake test
