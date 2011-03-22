@@ -6,7 +6,7 @@ watch_tree = require './../watch-tree'
 {check_exec_options,check_exec,EventBuffer,listsContainSameElements} = require './testing_util'
 
 cwd = process.cwd()
-tmp = "#{cwd}/build/test/temp"
+tmp = "#{cwd}/lib/test/temp"
 
 console.log tmp
 
@@ -61,19 +61,19 @@ testWatch = (t, options) ->
 
 
 module.exports =
-  
+
   undefined: (t) ->
     testWatch t
-  
+
   empty: (t) ->
     testWatch t, {}
-  
+
   match: (t) ->
     testWatch t, {match: '.*'}
-  
+
   ignore: (t) ->
     testWatch t, {ignore: 'vMk8F6eB'}
-  
+
   sample_rate: (t) ->
     testWatch t, {'sample-rate': 1}
 
