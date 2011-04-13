@@ -1,6 +1,6 @@
 {
     "name": "watch-tree",
-    "version": "0.1.0",
+    "version": "0.1.1",
 
     "description": "Yet another library for watching FS trees. Includes a JSON-on-stdout command-line tool and {filePreexisted,allPreexistingFilesReported} events.",
     "url": "https://github.com/tafa/node-watch-tree",
